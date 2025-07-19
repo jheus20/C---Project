@@ -1,37 +1,50 @@
-// switch case
 #include <iostream>
-using namespace std; 
+using namespace std;
 
-int main() { 
+int main() {
 
-    int month = 4;
-    
-    switch(month) {
+  double n1, n2, sum;
+  char nugge;
 
-    case 1:
-    cout << "january" << endl;
-    break;
+  cout << "Enter first number: ";
+  cin >> n1;
+ 
+  cout << "Enter second number: ";
+  cin >> n2;
 
-    case 2:
-    cout << "february" << endl;
-    break;
+  cout << "Please choose an operation (+, -, *, /): ";
+  cin >> nugge;
 
-    case 3:
-    cout << "march" << endl;
-    break;
+  switch (nugge) {
+    case '+':
+      sum = n1 + n2;
+      break;
 
-    case 4:
-    cout << "december" << endl;
-    break;
+      case '-':
+      sum = n1 - n2;
+      break;
 
-    default:
-    cout << "Wdym?" << endl;
+      case '*':
+      sum = n1 * n2;
+      break;
+
+      case '/':
+      sum = n1 / n2;
+      break;
+
+      default:
+      cout << "Kinginamo walang ganyan dito!!" << endl;
+
+      return 0;
   
-  }
 
 
 
-    return 0; 
+  } cout << "The result is: " << sum << endl;
 
-    
+
+
+  return 0; 
+
+   
 }
