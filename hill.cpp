@@ -1,3 +1,4 @@
+// switch case
 #include <iostream>
 using namespace std; 
 
